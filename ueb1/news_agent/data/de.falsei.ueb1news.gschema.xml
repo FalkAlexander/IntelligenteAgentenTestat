@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="news_agent">
+	<schema id="de.falsei.ueb1news" path="/de/falsei/ueb1news/">
+	</schema>
+</schemalist>

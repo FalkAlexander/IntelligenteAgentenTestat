@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <requires lib="libhandy" version="0.0"/>
+  <object class="GtkTextBuffer" id="article_buffer"/>
+  <template class="article_window" parent="HdyWindow">
+    <property name="width-request">500</property>
+    <property name="height-request">500</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="HdyHeaderBar" id="article_header_bar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="title" translatable="yes">topline</property>
+            <property name="subtitle" translatable="yes">headline</property>
+            <property name="show-close-button">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="max-content-width">550</property>
+            <property name="max-content-height">550</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkTextView" id="article_text_view">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                    <property name="editable">False</property>
+                    <property name="wrap-mode">word</property>
+                    <property name="left-margin">10</property>
+                    <property name="right-margin">10</property>
+                    <property name="top-margin">10</property>
+                    <property name="bottom-margin">10</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">article_buffer</property>
+                    <property name="monospace">True</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

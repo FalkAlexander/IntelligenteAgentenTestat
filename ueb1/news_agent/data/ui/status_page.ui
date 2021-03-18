@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <requires lib="libhandy" version="1.2"/>
+  <template class="status_page" parent="HdyStatusPage">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <property name="icon-name">view-dual-symbolic</property>
+    <property name="title" translatable="yes">No News Category Selected</property>
+    <property name="description" translatable="yes">Please select a news category</property>
+    <child>
+      <placeholder/>
+    </child>
+  </template>
+</interface>

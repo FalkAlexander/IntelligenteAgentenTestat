@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/de/falsei/ueb1wetter">
+    <file>custom.css</file>
+    <file>main_window.ui</file>
+    <file>status_page.ui</file>
+    <file>weather_page.ui</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=news_agent
+Exec=news_agent
+Icon=de.falsei.ueb1news
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

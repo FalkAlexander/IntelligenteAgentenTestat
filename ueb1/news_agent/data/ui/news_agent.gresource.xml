@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/de/falsei/ueb1news">
+    <file>custom.css</file>
+    <file>main_window.ui</file>
+    <file>status_page.ui</file>
+    <file>news_page.ui</file>
+    <file>news_category_list_box_row.ui</file>
+    <file>news_topline_list_box_row.ui</file>
+    <file>article_page.ui</file>
+  </gresource>
+</gresources>

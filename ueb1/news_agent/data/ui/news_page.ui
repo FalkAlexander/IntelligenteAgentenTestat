@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- n-columns=1 n-rows=2 -->
+  <template class="news_page" parent="GtkGrid">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">start</property>
+    <property name="margin-top">20</property>
+    <property name="margin-bottom">20</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <child>
+      <object class="GtkLabel" id="category_name_label">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="label" translatable="yes">category_name</property>
+        <attributes>
+          <attribute name="weight" value="ultrabold"/>
+          <attribute name="scale" value="2"/>
+        </attributes>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="label-xalign">0</property>
+        <property name="shadow-type">none</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="min-content-height">400</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkListBox" id="news_list_box">
+                    <property name="name">news_list_box</property>
+                    <property name="width-request">400</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="selection-mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="label_item">
+          <placeholder/>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+  </template>
+</interface>

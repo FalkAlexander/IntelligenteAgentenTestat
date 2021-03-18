@@ -1,0 +1,7 @@
+data/de.falsei.ueb1wetter.desktop.in
+data/de.falsei.ueb1wetter.appdata.xml.in
+data/de.falsei.ueb1wetter.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

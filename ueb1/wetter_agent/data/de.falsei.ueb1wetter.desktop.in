@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=wetter_agent
+Exec=wetter_agent
+Icon=de.falsei.ueb1wetter
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,0 +1,10 @@
+#categories_list_box,
+#news_list_box {
+	border: 1px solid @borders;
+	border-radius: 8px;
+	box-shadow: 0px 4px 5px 0px alpha(@borders,0.5);
+}
+
+#categories_list_box_row {
+	border-bottom: solid 1px alpha(@borders,0.5);
+}

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- n-columns=3 n-rows=3 -->
+  <template class="weather_page" parent="GtkGrid">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">start</property>
+    <property name="margin-top">20</property>
+    <property name="margin-bottom">20</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <child>
+      <object class="GtkImage">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="pixel-size">96</property>
+        <property name="icon-name">weather-clear-symbolic</property>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="city_name_label">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="label" translatable="yes">city_name</property>
+        <attributes>
+          <attribute name="weight" value="ultrabold"/>
+          <attribute name="scale" value="2"/>
+        </attributes>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFrame">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="label-xalign">0</property>
+        <property name="shadow-type">none</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="min-content-height">180</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkListBox" id="forecast_data_list_box">
+                    <property name="name">forecast_data_list_box</property>
+                    <property name="width-request">250</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="selection-mode">none</property>
+                    <property name="activate-on-single-click">False</property>
+                    <child>
+                      <object class="GtkListBoxRow" id="temperature_row">
+                        <property name="name">forecast_data_list_box_row</property>
+                        <property name="height-request">50</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="activatable">False</property>
+                        <property name="selectable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="label" translatable="yes">Temperature</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="temperature_label">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">end</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="hexpand">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkListBoxRow" id="temperature_row1">
+                        <property name="name">forecast_data_list_box_row</property>
+                        <property name="height-request">50</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="activatable">False</property>
+                        <property name="selectable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="label" translatable="yes">Sky</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="sky_label">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">end</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="hexpand">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkListBoxRow" id="temperature_row2">
+                        <property name="name">forecast_data_list_box_row</property>
+                        <property name="height-request">50</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="activatable">False</property>
+                        <property name="selectable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="label" translatable="yes">Wind Speed</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="wind_speed_label">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">end</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="hexpand">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkListBoxRow" id="temperature_row3">
+                        <property name="name">forecast_data_list_box_row</property>
+                        <property name="height-request">50</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="activatable">False</property>
+                        <property name="selectable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="label" translatable="yes">Sunrise</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="sunrise_label">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">end</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="hexpand">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkListBoxRow" id="temperature_row4">
+                        <property name="name">forecast_data_list_box_row</property>
+                        <property name="height-request">50</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="activatable">False</property>
+                        <property name="selectable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="label" translatable="yes">Sunset</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="sunset_label">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="halign">end</property>
+                                <property name="margin-left">15</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">15</property>
+                                <property name="margin-end">15</property>
+                                <property name="hexpand">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="label_item">
+          <placeholder/>
+        </child>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+  </template>
+</interface>
